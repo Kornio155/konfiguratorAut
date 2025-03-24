@@ -33,7 +33,7 @@
                 android:text="Stwórz swój samochód:"/>
 
             <RadioGroup
-                android:id="@+id/kawa_Radio"
+                android:id="@+id/auto_Radio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#4cc796"
@@ -70,7 +70,7 @@
                     android:id="@+id/kli"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Klima" />
+                    android:text="Klimatyzacja" />
 
                 <CheckBox
                     android:id="@+id/skf"
@@ -78,13 +78,13 @@
                     android:layout_height="wrap_content"
                     android:text="Skórzane fotele" />
 
-                <CheckBox
-                    android:id="@+id/psz"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Przyciemniane szyby" />
-
             </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stworz"
+                android:id="@+id/buton"
+                />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
