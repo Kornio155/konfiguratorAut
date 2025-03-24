@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -17,7 +17,9 @@
         android:paddingEnd="10dp"
         app:cardBackgroundColor="@color/black"
         app:cardCornerRadius="8dp"
-        app:cardElevation="4dp">
+        app:cardElevation="4dp"
+        android:scaleType="fitCenter"
+        >
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -56,13 +58,51 @@
                     android:layout_height="wrap_content"
                     android:text="HatchBack" />
             </RadioGroup>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#4cc796">
+                android:background="#4cc796"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/kli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Klima" />
+
+                <CheckBox
+                    android:id="@+id/skf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Skórzane fotele" />
+
+                <CheckBox
+                    android:id="@+id/psz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Przyciemniane szyby" />
 
             </LinearLayout>
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/zdjecie"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:contentDescription="Tu powinien pojawic sie samochod"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tuauto"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/podsumowanie"
+        />
 
 </LinearLayout>
